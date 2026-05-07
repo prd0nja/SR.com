@@ -10,7 +10,7 @@
 		"lint": "eslint src && tsc --noEmit",
 		"prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css}'",
 		"prisma:generate": "prisma generate",
-		"start": "next start -p 3001"
+		"start": "next start"
 	},
 	"dependencies": {
 		"@headlessui/react": "^2.2.9",
