@@ -37,7 +37,7 @@ const Home = async () => (
 			<div className="max-w-2xl pt-8">
 				<div className="flex items-center gap-3 mb-10">
 					<span className="w-8 h-px bg-white/20" />
-					<span className="text-xs text-white/30 tracking-[0.2em] uppercase font-medium">
+					<span className="text-xs text-white/50 tracking-[0.2em] uppercase font-medium">
 						Since 2017
 					</span>
 				</div>
@@ -57,7 +57,7 @@ const Home = async () => (
 						<span className="text-2xl font-extrabold tracking-tight text-white">
 							{s.value}
 						</span>
-						<span className="text-xs text-white/25 uppercase tracking-widest">
+						<span className="text-xs text-white/50 uppercase tracking-widest">
 							{s.label}
 						</span>
 					</div>
@@ -68,13 +68,13 @@ const Home = async () => (
 			{MODES.map(m => (
 				<span
 					key={m}
-					className="px-3 py-1 rounded-md border border-white/10 bg-white/[0.03] text-xs font-mono text-white/40 tracking-wider"
+					className="px-3 py-1 rounded-md border border-white/10 bg-white/3 text-xs font-mono text-white/50 tracking-wider"
 				>
 					{m}
 				</span>
 			))}
 		</div>
-		<p className="text-sm text-white/35 max-w-md leading-relaxed mb-12 border-l-2 border-primary/40 pl-4">
+		<p className="text-sm text-white/50 max-w-md leading-relaxed mb-12 border-l-2 border-primary/40 pl-4">
 			The home of Call of Duty 4 competitive speedrunning. Race through maps in the fastest
 			time possible, compete for world records, and earn XP across every movement style.
 		</p>
@@ -91,7 +91,7 @@ const Home = async () => (
 					<span className="font-bold text-sm text-white/80 mb-2 group-hover:text-white transition-colors">
 						{f.title}
 					</span>
-					<span className="text-xs text-white/30 leading-relaxed flex-1">
+					<span className="text-xs text-white/50 leading-relaxed flex-1">
 						{f.description}
 					</span>
 					<span className="mt-4 text-xs text-primary/60 group-hover:text-primary transition-colors">
@@ -111,7 +111,7 @@ const Home = async () => (
 			</div>
 			<div className="flex items-center gap-2">
 				<span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-				<span className="text-xs text-white/25 tracking-wide">Servers online</span>
+				<span className="text-xs text-white/50 tracking-wide">Servers online</span>
 			</div>
 		</div>
 	</section>

@@ -1,8 +1,15 @@
 import { getServers } from "@/libs/servers";
+import { getSEO } from "@/libs/seo";
+import config from "@/config";
 
 import Server from "../_components/Server";
 
 export const revalidate = 3;
+
+export const metadata = getSEO({
+	url: "/servers",
+	title: `${config.title} - Servers`
+});
 
 const Home = async () => {
 	const servers = await getServers();
@@ -11,7 +18,7 @@ const Home = async () => {
 		<section className="relative w-full min-h-screen flex flex-col justify-center max-w-7xl px-8 pt-24 pb-20 overflow-hidden">
 			<div className="mb-10">
 				<h1 className="text-4xl font-extrabold tracking-tight mb-2">Servers</h1>
-				<p className="text-white/40 text-sm">
+				<p className="text-white/50 text-sm">
 					Join from within Call of Duty 4 or connect directly below.
 				</p>
 			</div>

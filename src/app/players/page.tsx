@@ -21,7 +21,7 @@ const Players = async () => {
 	return (
 		<section className="relative w-full min-h-screen flex flex-col max-w-4xl mx-auto px-8 pt-28 pb-20">
 			<div className="mb-12">
-				<p className="text-xs text-white/25 uppercase tracking-[0.2em] font-medium mb-3">
+				<p className="text-xs text-white/50 uppercase tracking-[0.2em] font-medium mb-3">
 					Community
 				</p>
 				<h1 className="text-5xl font-extrabold tracking-tight text-white mb-4">Players</h1>
@@ -30,7 +30,7 @@ const Players = async () => {
 						<span className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-[#5c16c6] to-[#9e12ca]">
 							{playersCount.toLocaleString()}
 						</span>
-						<span className="text-xs text-white/30 uppercase tracking-widest">
+						<span className="text-xs text-white/50 uppercase tracking-widest">
 							registered players
 						</span>
 					</div>
@@ -39,7 +39,7 @@ const Players = async () => {
 						<span className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-[#5c16c6] to-[#9e12ca]">
 							{pbs.toLocaleString()}
 						</span>
-						<span className="text-xs text-white/30 uppercase tracking-widest">
+						<span className="text-xs text-white/50 uppercase tracking-widest">
 							personal bests
 						</span>
 					</div>
@@ -49,7 +49,7 @@ const Players = async () => {
 				<Search players={players} />
 			</div>
 			<div className="mb-4 flex items-center gap-3">
-				<span className="text-xs text-white/25 uppercase tracking-[0.2em] font-medium">
+				<span className="text-xs text-white/50 uppercase tracking-[0.2em] font-medium">
 					World record holders
 				</span>
 				<div className="flex-1 h-px bg-white/[0.05]" />

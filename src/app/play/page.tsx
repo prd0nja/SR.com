@@ -42,15 +42,15 @@ const Play = () => (
 					cod4x.ovh →
 				</Link>
 			</Step>
-			<div className="border border-purple-500/30 bg-purple-500/[0.06] rounded-2xl p-5">
+			<div className="border border-purple-500/50 bg-purple-500/[0.06] rounded-2xl p-5">
 				<div className="flex items-start gap-4">
-					<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/25 border border-purple-500/35 flex items-center justify-center text-sm font-bold text-purple-300">
+					<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/50 border border-purple-500/35 flex items-center justify-center text-sm font-bold text-purple-300">
 						3
 					</div>
 					<div className="flex-1">
 						<div className="flex items-center gap-3 mb-2 flex-wrap">
 							<span className="font-bold text-base">Install IW3SR</span>
-							<span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-500/20 border border-purple-500/30 text-purple-300">
+							<span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-500/20 border border-purple-500/50 text-purple-300">
 								Recommended
 							</span>
 						</div>
@@ -99,7 +99,7 @@ const Play = () => (
 
 const Step: FC<StepProps> = ({ number, title, children }) => (
 	<div className="border border-white/[0.06] bg-white/[0.02] rounded-2xl p-5 flex items-start gap-4 hover:border-white/10 transition-colors">
-		<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-sm font-bold text-purple-400">
+		<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/15 border border-purple-500/50 flex items-center justify-center text-sm font-bold text-purple-400">
 			{number}
 		</div>
 		<div>

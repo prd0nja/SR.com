@@ -6,7 +6,7 @@ const Footer = () => (
 			<div className="flex items-start justify-between gap-8 flex-wrap">
 				<div className="max-w-xs">
 					<div className="text-lg font-extrabold tracking-wider text-white mb-2">SR</div>
-					<p className="text-xs text-white/25 leading-relaxed">
+					<p className="text-xs text-white/50 leading-relaxed">
 						The home of Call of Duty 4 competitive speedrunning since 2017. Fully open
 						source and community driven.
 					</p>
@@ -52,30 +52,30 @@ const Footer = () => (
 				<div className="flex items-center gap-6">
 					<Link
 						href="/leaderboards"
-						className="text-xs text-white/20 hover:text-white/50 transition-colors"
+						className="text-xs text-white/40 hover:text-white/50 transition-colors"
 					>
 						Leaderboards
 					</Link>
 					<Link
 						href="/players"
-						className="text-xs text-white/20 hover:text-white/50 transition-colors"
+						className="text-xs text-white/40 hover:text-white/50 transition-colors"
 					>
 						Players
 					</Link>
 					<Link
 						href="/servers"
-						className="text-xs text-white/20 hover:text-white/50 transition-colors"
+						className="text-xs text-white/40 hover:text-white/50 transition-colors"
 					>
 						Servers
 					</Link>
 					<Link
 						href="/play"
-						className="text-xs text-white/20 hover:text-white/50 transition-colors"
+						className="text-xs text-white/40 hover:text-white/50 transition-colors"
 					>
 						Play
 					</Link>
 				</div>
-				<span className="text-xs text-white/15">© {new Date().getFullYear()} Iswenzz</span>
+				<span className="text-xs text-white/50">© {new Date().getFullYear()} Iswenzz</span>
 			</div>
 		</div>
 	</footer>

@@ -24,7 +24,7 @@ const parseServer = async (
 			connect,
 			map,
 			maxplayers: `${maxplayers}`,
-			players
+			players: players.map(({ name = "", ping }) => ({ name, ping }))
 		};
 	} catch (e) {
 		console.error(e);
