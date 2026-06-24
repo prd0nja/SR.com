@@ -22,7 +22,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
 		<body className={syne.className}>
 			<Client>
 				<Navbar />
-				<main className="relative min-h-screen flex flex-col items-center">
+				<main className="relative flex flex-col items-center">
 					<div className="fixed inset-0 overflow-hidden pointer-events-none">
 						<div className="absolute size-1/2 rounded-full top-20 -right-40 blur-[100px] bg-[conic-gradient(from_2.5rad,var(--color-primary),var(--color-secondary))] opacity-80" />
 						<div className="absolute size-1/2 rounded-full bottom-20 -left-40 blur-[100px] bg-[conic-gradient(from_2.5rad,var(--color-secondary),var(--color-primary))] opacity-60" />
