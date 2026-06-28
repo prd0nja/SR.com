@@ -25,7 +25,7 @@
 
 html,
 body {
-	@apply bg-[#0b0b0e] text-gray-300 scroll-smooth;
+	@apply bg-[#0b0b0e] text-[17px] text-gray-300 scroll-smooth;
 }
 
 progress::-webkit-progress-value {

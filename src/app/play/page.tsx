@@ -20,9 +20,7 @@ const Play = () => (
 	<section className="relative w-full min-h-screen flex flex-col max-w-4xl mx-auto px-8 pt-28 pb-20">
 		<div className="mb-10">
 			<h1 className="text-4xl font-extrabold tracking-tight mb-2">How to play</h1>
-			<p className="text-white/40 text-sm">
-				Everything you need to get started on SR servers.
-			</p>
+			<p className="text-white/40">Everything you need to get started on SR servers.</p>
 		</div>
 		<div className="flex flex-col gap-3">
 			<Step number={1} title="Own Call of Duty 4: Modern Warfare">
@@ -44,17 +42,17 @@ const Play = () => (
 			</Step>
 			<div className="border border-purple-500/50 bg-purple-500/[0.06] rounded-2xl p-5">
 				<div className="flex items-start gap-4">
-					<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/50 border border-purple-500/35 flex items-center justify-center text-sm font-bold text-purple-300">
+					<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/50 border border-purple-500/35 flex items-center justify-center font-bold text-purple-300">
 						3
 					</div>
 					<div className="flex-1">
 						<div className="flex items-center gap-3 mb-2 flex-wrap">
 							<span className="font-bold text-base">Install IW3SR</span>
-							<span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-500/20 border border-purple-500/50 text-purple-300">
+							<span className="px-2.5 py-0.5 rounded-full font-semibold bg-purple-500/20 border border-purple-500/50 text-purple-300">
 								Recommended
 							</span>
 						</div>
-						<p className="text-sm text-white/50 leading-relaxed mb-4">
+						<p className="text-white/50 leading-relaxed mb-4">
 							IW3SR is a custom CoD4 client built specifically for SR. It delivers
 							smoother movement across all custom physics modes and includes a
 							built-in browser with video playback, letting you watch runs and
@@ -64,11 +62,8 @@ const Play = () => (
 						</p>
 						<div className="grid grid-cols-1 gap-1.5 mb-5">
 							{IW3SR_FEATURES.map(f => (
-								<div
-									key={f}
-									className="flex items-center gap-2 text-xs text-white/40"
-								>
-									<span className="text-purple-400 text-sm">✓</span> {f}
+								<div key={f} className="flex items-center gap-2 text-white/40">
+									<span className="text-purple-400">✓</span> {f}
 								</div>
 							))}
 						</div>
@@ -76,7 +71,7 @@ const Play = () => (
 							href="https://github.com/Iswenzz/IW3SR/releases/latest/download/IW3SR.zip"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-linear-to-br from-[#5c16c6] to-[#9e12ca] hover:opacity-90 transition-opacity"
+							className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold bg-linear-to-br from-[#5c16c6] to-[#9e12ca] hover:opacity-90 transition-opacity"
 						>
 							Download
 						</Link>
@@ -99,12 +94,12 @@ const Play = () => (
 
 const Step: FC<StepProps> = ({ number, title, children }) => (
 	<div className="border border-white/[0.06] bg-white/[0.02] rounded-2xl p-5 flex items-start gap-4 hover:border-white/10 transition-colors">
-		<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/15 border border-purple-500/50 flex items-center justify-center text-sm font-bold text-purple-400">
+		<div className="min-w-[32px] h-8 rounded-lg bg-purple-500/15 border border-purple-500/50 flex items-center justify-center font-bold text-purple-400">
 			{number}
 		</div>
 		<div>
 			<div className="font-bold text-base mb-1.5">{title}</div>
-			<p className="text-sm text-white/45 leading-relaxed">{children}</p>
+			<p className="text-white/45 leading-relaxed">{children}</p>
 		</div>
 	</div>
 );

@@ -37,7 +37,7 @@ const Home = async () => (
 			<div className="max-w-2xl pt-8">
 				<div className="flex items-center gap-3 mb-10">
 					<span className="w-8 h-px bg-white/20" />
-					<span className="text-xs text-white/50 tracking-[0.2em] uppercase font-medium">
+					<span className="text-sm text-white/50 tracking-[0.2em] uppercase font-medium">
 						Since 2017
 					</span>
 				</div>
@@ -57,7 +57,7 @@ const Home = async () => (
 						<span className="text-2xl font-extrabold tracking-tight text-white">
 							{s.value}
 						</span>
-						<span className="text-xs text-white/50 uppercase tracking-widest">
+						<span className="text-sm text-white/50 uppercase tracking-widest">
 							{s.label}
 						</span>
 					</div>
@@ -68,17 +68,17 @@ const Home = async () => (
 			{MODES.map(m => (
 				<span
 					key={m}
-					className="px-3 py-1 rounded-md border border-white/10 bg-white/3 text-xs font-mono text-white/50 tracking-wider"
+					className="px-3 py-1 rounded-md border border-white/10 bg-white/3 text-sm font-mono text-white/50 tracking-wider"
 				>
 					{m}
 				</span>
 			))}
 		</div>
-		<p className="text-sm text-white/50 max-w-md leading-relaxed mb-12 border-l-2 border-primary/40 pl-4">
+		<p className="text-lg text-white/50 max-w-md leading-relaxed mb-12 border-l-2 border-primary/40 pl-4">
 			The home of Call of Duty 4 competitive speedrunning. Race through maps in the fastest
 			time possible, compete for world records, and earn XP across every movement style.
 		</p>
-		<div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/5 border border-white/10 rounded-2xl overflow-hidden mb-12">
+		<div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/5 border border-white/10 rounded-2xl overflow-hidden mb-8">
 			{FEATURES.map(f => (
 				<Link
 					key={f.title}
@@ -88,30 +88,30 @@ const Home = async () => (
 					<span className="text-[10px] font-mono text-white/20 tracking-widest mb-4">
 						{f.label}
 					</span>
-					<span className="font-bold text-sm text-white/80 mb-2 group-hover:text-white transition-colors">
+					<span className="font-bold text-lg text-white/80 mb-2 group-hover:text-white transition-colors">
 						{f.title}
 					</span>
-					<span className="text-xs text-white/50 leading-relaxed flex-1">
+					<span className="text-sm text-white/50 leading-relaxed flex-1">
 						{f.description}
 					</span>
-					<span className="mt-4 text-xs text-primary/60 group-hover:text-primary transition-colors">
+					<span className="mt-4 text-sm text-primary/60 group-hover:text-primary transition-colors">
 						Explore →
 					</span>
 				</Link>
 			))}
 		</div>
-		<div className="flex items-center justify-between flex-wrap gap-4">
+		<div className="flex items-center justify-between flex-wrap gap-4 px-1">
 			<div className="flex items-center gap-3">
 				<Link
 					href="/play"
-					className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-linear-to-br from-[#5c16c6] to-[#9e12ca] text-white font-bold text-xs tracking-wide hover:opacity-90 transition-opacity uppercase"
+					className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-linear-to-br from-[#5c16c6] to-[#9e12ca] text-white font-bold text-sm tracking-wide hover:opacity-90 transition-opacity uppercase"
 				>
 					Start playing
 				</Link>
 			</div>
 			<div className="flex items-center gap-2">
 				<span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-				<span className="text-xs text-white/50 tracking-wide">Servers online</span>
+				<span className="text-sm text-white/50 tracking-wide">Servers online</span>
 			</div>
 		</div>
 	</section>
